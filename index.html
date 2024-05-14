@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head> <!-- Kód, který není vidět -->
+        <meta charset="utf-8"> <!--Kódování znaků -->
+        <title>Austrálie</title> <!-- Nadpis celého webu -->
+        <style> 
+        /*Typové selektory = změní barvu všem typům (h1, h2, body, p)*/
+        body {
+            font-size: 16px;
+            background-color:white; /*Barva pro _body_ což je celá stránka*/
+            font-family: Arial, Helvetica, sans-serif
+        }
+        h1 {
+            color: rgba(180, 88, 8, 0.751) /*Barva pro všechny nadpisy _H1_*/   
+            }
+       
+        #Tabulka_sity {
+            text-align: center;
+        }
+        #hlavicka_tabulky_prehledu_situ {
+            background-color: rgb(209, 206, 206) 
+        }
+        #Nahoru {
+            text-decoration: none; /*Odebere původní dekoraci, abych mu mohl přidat jinou*/
+        }
+        #Nahoru:hover {
+            color: rgba(180, 88, 8, 0.751); /*Přidá prokliku "Nahoru" barvu po najetí myší*/
+        }
+
+        </style> <!--Ve "Style" je jen CSS -->
+    </head>
+    <body> <!-- Všechno na webu, co je vidět -->
+        <a target="_blank" href="https://cs.wikipedia.org/wiki/Austr%C3%A1lie"> <!-- Hypertext na jinou doménu -->
+            <h1 id="hlavicka - Australie">Austrálie</h1>
+        </a>
+        <h2>Proč?</h2> 
+        <!--_p_ je klasický text -->
+        <p>Ani nevím, kde se ten nápad úplně původně vzal, ale rychle jsme se na něm shodli. Duben 2023 se tak nějak utvořila
+            myšlenka, že vycestujeme a <strong>v květnu už jsme kupovali letenku.</strong> <!--_strong_ = tučně -->
+            Sice až na říjen, ale bylo to odklepnuté.</p>
+        <h2>Kam?</h2>
+            <p>Nemáme tušení. Jelikož jsme v průběhu těch 5 měsíců před odletem plánovali a zároveň prováděli ještě cestování
+                do 4 dalších zemí, nehrotili jsme dopředu detaily. Věděli jsme, že Austrálie je velká a že tam je hodně nabídek
+                na <em>Housesitting.</em> <!-- _em_ = kurzíva --> To nám vlastně stačilo.</p>
+        <h2>Kolik sitů ve finále klaplo?</h2>
+            <p>Nakonec to bylo 5 různě dlouhých sitů.</p>
+                <ul> <!-- unordered list -->
+                    <li>Canberra    - 6 týdnů</li> <!-- odrážky -->
+                    <li>Geelong     - týden</li>
+                    <li>Newcastle   - týden</li>
+                    <li>Gold Coast  - týden</li>
+                    <li>Sydney      - 3 týdny</li>
+            <p>... a pro přehled:</p>
+            <table id="Tabulka_sity"> <!-- Tabulka -->
+                <thead> <!-- Hlavička tabulky, něco jako <head> na webu -->
+                    <tr id="hlavicka_tabulky_prehledu_situ" > <!-- Řádek -->
+                        <th>Město</th> <!-- Buňky prvního řádku, hlavičky -->
+                        <th>Počet týdnů</th>
+                        <th>Počet psů</th>
+                        <th>Jména</th>
+                        <th>Počet koček</th>
+                        <th>Jména</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Tělo tabulky -->
+                    <tr>
+                        <td>Canberra</td> <!-- 2. řádek pod hlavičkouk-->
+                        <td>6</td>
+                        <td>1</td>
+                        <td>Cherry</td>
+                        <td>0</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Geelong</td> <!-- 3. řádek pod hlavičkou... -->
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Jenga</td>
+                        <td>0</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Newcastle</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Lucy</td>
+                        <td>0</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Gold Coast</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Cliffy</td>
+                        <td>0</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Sydney</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>Snickers</td>
+                        <td>2</td>
+                        <td>Pearl, Wolfie</td>
+                    </tr>
+                </tbody>
+            </table>
+                </ul>
+        
+        <a href="#hlavicka - Australie" id="Nahoru">Nahoru</a> <!-- Hypertext jinam na stejné doméně -->        
+    </body>
+
+</html>
